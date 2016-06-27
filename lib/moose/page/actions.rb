@@ -36,10 +36,7 @@ module Moose
       # @return [Boolean] true when successful
       def click_on(element)
         wait_for_element(element)
-        wait_until do
-          element.click
-        end
-        true
+        element.click
       end
 
       # Given a locator, click on it and then wait till it disappears
